@@ -1,0 +1,12 @@
+configuration {
+    display-drun: "Application";
+    display-window: "Window";
+    display-filebrowser: "File";
+    display-clipboard: "Clipboard";
+    drun-display-format: "{icon} {name}";
+    font: "SF Pro Regular 12";
+    modi: "window,drun,filebrowser";
+    show-icons: true;
+}
+
+@theme "~/.config/rofi/dracula.rasi"

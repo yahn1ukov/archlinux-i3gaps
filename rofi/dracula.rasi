@@ -1,0 +1,72 @@
+* {
+  background: #28282B;
+  foreground: #FFFFFF;
+  currentLine: #28282B;
+  comment: #28282B;
+  purple: #90EE90;
+
+  background-color: @background;
+
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+window {
+  width: 30%;
+  border: 2;
+  border-color: @purple;
+}
+
+element {
+  padding: 8 0;
+  text-color: @foreground;
+}
+
+element selected {
+  text-color: @purple;
+}
+
+element-text {
+  text-color: inherit;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 18;
+  padding: 0 10 0 0;
+}
+
+entry {
+  background-color: @currentLine;
+  padding: 12;
+  text-color: @foreground;
+  border: 0 0 2 0;
+  border-color: @purple;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  padding: 8 12;
+  background-color: @background;
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  background-color: @background;
+  children: [inputbar, listview];
+}
+
+prompt {
+  background-color: @currentLine;
+  enabled: true;
+  padding: 12 12 0 12;
+  text-color: @foreground;
+  border: 0 2 2 0;
+  border-color: @purple;
+}
